@@ -1,0 +1,28 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = MyDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {printView = NSView; }; 
+            SUPERCLASS = NSPersistentDocument; 
+        }, 
+        {CLASS = NSPersistentDocument; LANGUAGE = ObjC; SUPERCLASS = NSDocument; }, 
+        {
+            ACTIONS = {recalculateData = id; refreshData = id; refreshStock = id; }; 
+            CLASS = TotallerController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                graph = SM2DGraphView; 
+                includeNegative = NSButton; 
+                includeOutsideDates = NSButton; 
+                persistentDocument = NSPersistentDocument; 
+                tableView = NSTableView; 
+                total = NSTextField; 
+                working = NSProgressIndicator; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
